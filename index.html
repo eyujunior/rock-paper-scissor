@@ -41,28 +41,63 @@
   <body>
     <div class="game-container">
       <div class="score-container">
-        <h1 class="heading-primary">
+        <img src="./images/logo.svg" alt="" class="logo">
+        <!-- <h1 class="heading-primary">
           <span>rock</span>
           <span>paper</span>
           <span>scissor</span>
-        </h1>
+        </h1> -->
         <div class="scores">
           <h2 class="score-title">Score</h2>
-        <span class="score">0</span>
+          <span class="score">0</span>
         </div>
-        
       </div>
       <div class="img-container">
-        <img src="./images/icon-rock.svg " alt="rock svg" class="img-item img-item-1" />
-        <img src="./images/icon-paper.svg " alt="paper svg" class="img-item img-item-2" />
         <img
-          src="./images/icon-scissors.svg "
+          src="./images/rock.svg "
+          alt="rock svg"
+          class="img-item img-item-1"
+        />
+
+        <img
+          src="./images/paper.svg "
+          alt="paper svg"
+          class="img-item img-item-2"
+        />
+
+        <img
+          src="./images/scissors.svg "
           alt="scissor svg"
           class="img-item img-item-3"
         />
-        <img src="./images/bg-triangle.svg" alt="" class="img-triangle">
+
+        <img src="./images/bg-triangle.svg" alt="" class="img-triangle" />
       </div>
+
+      <div class="play-container none">
+        <div class="players-container">
+          <h3 class="picked">You picked</h3>
+          <img src="./images/paper.svg" alt="paper svg" class="img-items img-items-1">
+        </div>
+        <div class="winner-container">
+          <h3 class="winner">You Lose</h3>
+          <button class="btn btn-white">play again</button>
+        </div>
+        <div class="players-container">
+          <h3 class="picked">house picked</h3>
+          <img src="./images/rock.svg" alt="rock svg" class="img-items img-items-2">
+        </div>
+      </div>
+      <button class="btn btn-ghost">Rules</button>
     </div>
+<div class="modal-bg">
+  <div class="modal">
+    <h2 class="modal-title">Rules</h2>
+    <img src="./images/image-rules.svg" alt="rules svg" class="modal-img">
+    <span>X</span>
+  </div>
+</div>
+   
 
     <div class="attribution">
       Challenge by
@@ -70,5 +105,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+
+    <script src="./app.js"></script>
   </body>
 </html>
